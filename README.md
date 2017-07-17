@@ -7,7 +7,7 @@ This is a training exercise designed to give a general knowledge about how an Ak
 ---
 
 ## Description of the base project:
-We need an application that reads messages from a Kafka topic called `47degrees_akka_training`. Messages are strings representing an accountId.
+We need an application that reads messages from a Kafka topic called `workshop_akka_training`. Messages are strings representing an accountId.
 
 Kafka message examples: 
 
@@ -79,7 +79,7 @@ Additionally, we want an endpoint to expose the number of received messages for 
 
 ### Acceptance criteria for the base project
 
-Publishing a message to `47degrees_akka_training` with an `<account>` string
+Publishing a message to `workshop_akka_training` with an `<account>` string
 When Hitting the endpoint requesting the same `<account>` string
 Then The response json shows the `AccountState` json respresentation. (Number of received messages and last modification dateTime)
 
@@ -96,7 +96,7 @@ A third party service changed the shape of the messages we are reading to update
 
 ##### Acceptance criteria:
 
-Publishing a message to `47degrees_akka_training` with this shape and check if the counter has been increased for this particular accountId.
+Publishing a message to `workshop_akka_training` with this shape and check if the counter has been increased for this particular accountId.
 
 
 
